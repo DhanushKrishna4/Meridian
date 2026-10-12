@@ -1,5 +1,8 @@
 # Verification record
 
+This is the original local verification record. The subsequent public deployment
+on 2026-10-13 is recorded separately in [DEPLOYMENT.md](DEPLOYMENT.md).
+
 Verified locally on 2026-10-10 (Asia/Kolkata; browser report timestamps are UTC).
 The production application runs at a repository subpath, `/Meridian/`, using
 the same Python sources as the native package. No remote repository or site

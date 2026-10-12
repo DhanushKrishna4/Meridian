@@ -1,5 +1,8 @@
 # Meridian
 
+[Open the live laboratory](https://dhanushkrishna4.github.io/Meridian/) ·
+[Deployment verification](docs/DEPLOYMENT.md)
+
 A local causal machine learning laboratory. Investigate observational data,
 inspect compatible explanations, choose an experiment, and ask counterfactual
 questions under an explicit structural model.
@@ -147,5 +150,7 @@ on each site build.
 
 The local verification record in `docs/VERIFICATION.md` is dated separately from
 deployment; it preserves the exact scope of the measured numerical checks.
+The public deployment and its browser checks are recorded in
+[DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 MIT license. See [third-party notices](THIRD_PARTY_NOTICES.md).
