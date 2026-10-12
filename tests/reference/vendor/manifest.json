@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/xunzheng/notears",
+  "commit": "4a9ab19fe502e392503da331773c5223d82d3666",
+  "files": {
+    "notears_linear.py": {
+      "url": "https://raw.githubusercontent.com/xunzheng/notears/4a9ab19fe502e392503da331773c5223d82d3666/notears/linear.py",
+      "sha256": "39644acd5b5d5ebc5fb5be5783365137eaa3b309df73bc0a75bad1942a0a426f"
+    },
+    "NOTEARS_LICENSE": {
+      "url": "https://raw.githubusercontent.com/xunzheng/notears/4a9ab19fe502e392503da331773c5223d82d3666/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    }
+  }
+}

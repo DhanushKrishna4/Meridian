@@ -1,0 +1,9 @@
+export type Graph = { nodes: string[]; directed: [string,string][]; undirected: [string,string][]; conflicts?: unknown[] };
+export type Model = { nodes: string[]; B: number[][]; intercept: number[]; noise_variances: number[]; provenance?: string };
+export type Candidate = { id: number; graph: Graph; model: Model; weight: number };
+export type Discovery = { graph: Graph; status: string; trace?: Record<string,unknown>[]; tests?: number; conflicts?: unknown[]; settings?: Record<string,unknown>; [key:string]: unknown };
+export type Session = { id: string; world?: string; nodes:string[]; data: number[][]; row_count: number; diagnostics: Record<string,unknown>; split: Record<string,unknown>; description: string; truth_available: boolean; pc: Discovery | null; notears: Discovery | null; candidates: Candidate[]; enumeration?: Record<string,unknown>; selected?: number | string; custom_model?: Model; history?: Record<string,unknown>[]; [key:string]: unknown };
+export type Moments = { mean:number[]; covariance:number[][] };
+export type Query = { nodes:string[]; observational: Moments; conditional: Moments; interventional:Moments; factual: number[]; counterfactual:number[]; descendants: string[] | Record<string,unknown>; equations: unknown; effects:number[][]; model_label:string; [key:string]:unknown };
+export type Rank = { variable:string; value:number; score:number; mean_score:number; covariance_score:number; [key:string]:unknown };
+export type Progress = { stage:string; completed?:number; total?:number; message?:string };

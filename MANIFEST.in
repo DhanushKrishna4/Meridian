@@ -1,0 +1,16 @@
+include README.md LICENSE THIRD_PARTY_NOTICES.md requirements-dev.txt
+recursive-include docs *.md
+recursive-include docs/screenshots *.png
+recursive-include examples *.md *.json *.csv
+recursive-include tests *.py *.json *LICENSE
+include tests/reference/requirements.txt
+include benchmarks/run.py
+recursive-include benchmarks/results *.json *.md
+recursive-include scripts *.py *.json
+include web/package.json web/package-lock.json web/tsconfig.json web/vite.config.ts
+include web/index.html web/verification.html
+recursive-include web/src *.ts *.tsx *.css
+recursive-include web/public *.svg *.json *.html *.txt
+prune web/public/runtime
+prune web/public/python
+include .github/workflows/pages.yml

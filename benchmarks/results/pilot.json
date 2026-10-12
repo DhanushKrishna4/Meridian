@@ -1,0 +1,1447 @@
+{
+  "schema_version": 1,
+  "preset": "pilot",
+  "discovery": [
+    {
+      "method": "pc",
+      "standardize": null,
+      "status": "complete",
+      "reason": "adjacency search exhausted",
+      "graph": {
+        "nodes": [
+          "V3",
+          "V1",
+          "V5",
+          "V2",
+          "V4"
+        ],
+        "directed": [],
+        "undirected": [
+          [
+            "V2",
+            "V3"
+          ]
+        ]
+      },
+      "runtime_seconds": 0.002345083999898634,
+      "settings": {
+        "alpha": 0.01,
+        "max_depth": 3,
+        "max_tests": 10000,
+        "timeout": 10,
+        "collider_variant": "first-separating-set (stable-ID order); not conservative PC",
+        "orientation": "simultaneous conflict-checked Meek R1\u2013R3; no background knowledge",
+        "oracle": false,
+        "dataset_id": "8ceaeef523b7caea5803cbe6099c1925ea1b315e8bfeaea9ca91f96f29fb34f2"
+      },
+      "graph_metrics": {
+        "skeleton_precision": 1.0,
+        "skeleton_recall": 1.0,
+        "skeleton_f1": 1.0,
+        "skeleton_true_positive": 1,
+        "skeleton_false_positive": 0,
+        "skeleton_false_negative": 0,
+        "cpdag_state_error": 0,
+        "compelled_correct": 0,
+        "compelled_predicted": 0,
+        "compelled_true": 0,
+        "compelled_precision": null,
+        "compelled_recall": null,
+        "compelled_reversed": 0,
+        "true_compelled_left_unresolved": 0,
+        "unresolved_directions": 1,
+        "output_unresolved_directions": 1,
+        "conflicting_directions": 0,
+        "comparison": "returned partially directed graph"
+      },
+      "tests": 10,
+      "conflicts": [],
+      "candidates": {
+        "status": "exhausted",
+        "complete": true,
+        "count": 2,
+        "expansions": 3
+      },
+      "prediction_metrics": {
+        "intervention_mean_nrmse": 0.10101019352626127,
+        "intervention_covariance_nrmse": 0.05671543922740733,
+        "prediction_candidate_count": 2,
+        "prediction_pooling": "uniform candidate mixture",
+        "normalization": "training SD for mean; training SD outer product for covariance"
+      },
+      "total_runtime_seconds": 0.004716667001048336,
+      "seed": 7,
+      "n": 200,
+      "noise": "equal",
+      "rescaled": false,
+      "data_digest": "13e9ffc576b3b7197e9f9cdceabff8ab62c8392b8a6cf62077cc55280f873836",
+      "true_graph": {
+        "nodes": [
+          "V3",
+          "V1",
+          "V5",
+          "V2",
+          "V4"
+        ],
+        "directed": [
+          [
+            "V3",
+            "V2"
+          ]
+        ],
+        "undirected": []
+      }
+    },
+    {
+      "method": "notears",
+      "standardize": true,
+      "status": "numerical failure",
+      "reason": "Nonfinite optimizer objective or gradient.",
+      "graph": {
+        "nodes": [
+          "V3",
+          "V1",
+          "V5",
+          "V2",
+          "V4"
+        ],
+        "directed": [],
+        "undirected": []
+      },
+      "runtime_seconds": 0.013857125000868109,
+      "settings": {
+        "lambda1": 0.1,
+        "threshold": 0.2,
+        "max_outer": 30,
+        "max_inner": 150,
+        "h_tol": 1e-08,
+        "timeout": 20
+      },
+      "graph_metrics": {
+        "skeleton_precision": 0.0,
+        "skeleton_recall": 0.0,
+        "skeleton_f1": 0.0,
+        "skeleton_true_positive": 0,
+        "skeleton_false_positive": 0,
+        "skeleton_false_negative": 1,
+        "cpdag_state_error": 1,
+        "compelled_correct": 0,
+        "compelled_predicted": 0,
+        "compelled_true": 0,
+        "compelled_precision": null,
+        "compelled_recall": null,
+        "compelled_reversed": 0,
+        "true_compelled_left_unresolved": 0,
+        "unresolved_directions": 0,
+        "output_unresolved_directions": 0,
+        "conflicting_directions": 0,
+        "comparison": "induced CPDAG",
+        "dag_arrow_symmetric_difference": 1,
+        "dag_exact_recovery": false
+      },
+      "h": 0.00014544691008744337,
+      "iterations": 80,
+      "converged": false,
+      "preprocessing": {
+        "mode": "standardized training data",
+        "mean": [
+          0.22608399337988572,
+          0.23396980265455472,
+          0.0526451101403739,
+          0.07202298810030362,
+          -0.10331031194060529
+        ],
+        "scale": [
+          1.0014163288282902,
+          0.9261091287170489,
+          0.9577760035761129,
+          1.2815905406530008,
+          0.9629123241145882
+        ],
+        "fit_role": "training"
+      },
+      "graph_valid": true,
+      "candidates": {
+        "status": "not attempted: discovery incomplete"
+      },
+      "total_runtime_seconds": 0.20310783400054788,
+      "seed": 7,
+      "n": 200,
+      "noise": "equal",
+      "rescaled": false,
+      "data_digest": "13e9ffc576b3b7197e9f9cdceabff8ab62c8392b8a6cf62077cc55280f873836",
+      "true_graph": {
+        "nodes": [
+          "V3",
+          "V1",
+          "V5",
+          "V2",
+          "V4"
+        ],
+        "directed": [
+          [
+            "V3",
+            "V2"
+          ]
+        ],
+        "undirected": []
+      }
+    },
+    {
+      "method": "notears",
+      "standardize": false,
+      "status": "complete",
+      "reason": "acyclicity tolerance and inner solver convergence reached",
+      "graph": {
+        "nodes": [
+          "V3",
+          "V1",
+          "V5",
+          "V2",
+          "V4"
+        ],
+        "directed": [
+          [
+            "V3",
+            "V2"
+          ]
+        ],
+        "undirected": []
+      },
+      "runtime_seconds": 0.02345666700057336,
+      "settings": {
+        "lambda1": 0.1,
+        "threshold": 0.2,
+        "max_outer": 30,
+        "max_inner": 150,
+        "h_tol": 1e-08,
+        "timeout": 20
+      },
+      "graph_metrics": {
+        "skeleton_precision": 1.0,
+        "skeleton_recall": 1.0,
+        "skeleton_f1": 1.0,
+        "skeleton_true_positive": 1,
+        "skeleton_false_positive": 0,
+        "skeleton_false_negative": 0,
+        "cpdag_state_error": 0,
+        "compelled_correct": 0,
+        "compelled_predicted": 0,
+        "compelled_true": 0,
+        "compelled_precision": null,
+        "compelled_recall": null,
+        "compelled_reversed": 0,
+        "true_compelled_left_unresolved": 0,
+        "unresolved_directions": 1,
+        "output_unresolved_directions": 0,
+        "conflicting_directions": 0,
+        "comparison": "induced CPDAG",
+        "dag_arrow_symmetric_difference": 0,
+        "dag_exact_recovery": true
+      },
+      "h": 4.164908418147206e-09,
+      "iterations": 427,
+      "converged": true,
+      "preprocessing": {
+        "mode": "centered original units",
+        "mean": [
+          0.22608399337988572,
+          0.23396980265455472,
+          0.0526451101403739,
+          0.07202298810030362,
+          -0.10331031194060529
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fit_role": "training"
+      },
+      "graph_valid": true,
+      "candidates": {
+        "status": "single score-selected DAG",
+        "complete": false,
+        "count": 1
+      },
+      "prediction_metrics": {
+        "intervention_mean_nrmse": 0.054571751311019094,
+        "intervention_covariance_nrmse": 0.046366052996457165,
+        "prediction_candidate_count": 1,
+        "prediction_pooling": "uniform candidate mixture",
+        "normalization": "training SD for mean; training SD outer product for covariance"
+      },
+      "total_runtime_seconds": 0.024967957999251666,
+      "seed": 7,
+      "n": 200,
+      "noise": "equal",
+      "rescaled": false,
+      "data_digest": "13e9ffc576b3b7197e9f9cdceabff8ab62c8392b8a6cf62077cc55280f873836",
+      "true_graph": {
+        "nodes": [
+          "V3",
+          "V1",
+          "V5",
+          "V2",
+          "V4"
+        ],
+        "directed": [
+          [
+            "V3",
+            "V2"
+          ]
+        ],
+        "undirected": []
+      }
+    },
+    {
+      "method": "pc",
+      "standardize": null,
+      "status": "complete",
+      "reason": "adjacency search exhausted",
+      "graph": {
+        "nodes": [
+          "V3",
+          "V1",
+          "V5",
+          "V2",
+          "V4"
+        ],
+        "directed": [],
+        "undirected": [
+          [
+            "V2",
+            "V3"
+          ]
+        ]
+      },
+      "runtime_seconds": 0.0005170419990463415,
+      "settings": {
+        "alpha": 0.01,
+        "max_depth": 3,
+        "max_tests": 10000,
+        "timeout": 10,
+        "collider_variant": "first-separating-set (stable-ID order); not conservative PC",
+        "orientation": "simultaneous conflict-checked Meek R1\u2013R3; no background knowledge",
+        "oracle": false,
+        "dataset_id": "810bad0ef8007b6512bbaa88a9bf1f2fdb831e744c18ddcc6b43336e573ebbc5"
+      },
+      "graph_metrics": {
+        "skeleton_precision": 1.0,
+        "skeleton_recall": 1.0,
+        "skeleton_f1": 1.0,
+        "skeleton_true_positive": 1,
+        "skeleton_false_positive": 0,
+        "skeleton_false_negative": 0,
+        "cpdag_state_error": 0,
+        "compelled_correct": 0,
+        "compelled_predicted": 0,
+        "compelled_true": 0,
+        "compelled_precision": null,
+        "compelled_recall": null,
+        "compelled_reversed": 0,
+        "true_compelled_left_unresolved": 0,
+        "unresolved_directions": 1,
+        "output_unresolved_directions": 1,
+        "conflicting_directions": 0,
+        "comparison": "returned partially directed graph"
+      },
+      "tests": 10,
+      "conflicts": [],
+      "candidates": {
+        "status": "exhausted",
+        "complete": true,
+        "count": 2,
+        "expansions": 3
+      },
+      "prediction_metrics": {
+        "intervention_mean_nrmse": 0.10101019352626127,
+        "intervention_covariance_nrmse": 0.056715439227407335,
+        "prediction_candidate_count": 2,
+        "prediction_pooling": "uniform candidate mixture",
+        "normalization": "training SD for mean; training SD outer product for covariance"
+      },
+      "total_runtime_seconds": 0.00259616700168408,
+      "seed": 7,
+      "n": 200,
+      "noise": "equal",
+      "rescaled": true,
+      "data_digest": "dcd5874a27161278ee60ff65c29651701a1ae606889a656349c291c9268a5114",
+      "true_graph": {
+        "nodes": [
+          "V3",
+          "V1",
+          "V5",
+          "V2",
+          "V4"
+        ],
+        "directed": [
+          [
+            "V3",
+            "V2"
+          ]
+        ],
+        "undirected": []
+      }
+    },
+    {
+      "method": "notears",
+      "standardize": true,
+      "status": "numerical failure",
+      "reason": "Nonfinite optimizer objective or gradient.",
+      "graph": {
+        "nodes": [
+          "V3",
+          "V1",
+          "V5",
+          "V2",
+          "V4"
+        ],
+        "directed": [],
+        "undirected": []
+      },
+      "runtime_seconds": 0.0069154590000835015,
+      "settings": {
+        "lambda1": 0.1,
+        "threshold": 0.2,
+        "max_outer": 30,
+        "max_inner": 150,
+        "h_tol": 1e-08,
+        "timeout": 20
+      },
+      "graph_metrics": {
+        "skeleton_precision": 0.0,
+        "skeleton_recall": 0.0,
+        "skeleton_f1": 0.0,
+        "skeleton_true_positive": 0,
+        "skeleton_false_positive": 0,
+        "skeleton_false_negative": 1,
+        "cpdag_state_error": 1,
+        "compelled_correct": 0,
+        "compelled_predicted": 0,
+        "compelled_true": 0,
+        "compelled_precision": null,
+        "compelled_recall": null,
+        "compelled_reversed": 0,
+        "true_compelled_left_unresolved": 0,
+        "unresolved_directions": 0,
+        "output_unresolved_directions": 0,
+        "conflicting_directions": 0,
+        "comparison": "induced CPDAG",
+        "dag_arrow_symmetric_difference": 1,
+        "dag_exact_recovery": false
+      },
+      "h": 0.00014544691008744337,
+      "iterations": 80,
+      "converged": false,
+      "preprocessing": {
+        "mode": "standardized training data",
+        "mean": [
+          0.04521679867597714,
+          0.11698490132727736,
+          0.0526451101403739,
+          0.14404597620060725,
+          -0.5165515597030264
+        ],
+        "scale": [
+          0.20028326576565814,
+          0.46305456435852443,
+          0.9577760035761129,
+          2.5631810813060016,
+          4.81456162057294
+        ],
+        "fit_role": "training"
+      },
+      "graph_valid": true,
+      "candidates": {
+        "status": "not attempted: discovery incomplete"
+      },
+      "total_runtime_seconds": 0.007027542000287212,
+      "seed": 7,
+      "n": 200,
+      "noise": "equal",
+      "rescaled": true,
+      "data_digest": "dcd5874a27161278ee60ff65c29651701a1ae606889a656349c291c9268a5114",
+      "true_graph": {
+        "nodes": [
+          "V3",
+          "V1",
+          "V5",
+          "V2",
+          "V4"
+        ],
+        "directed": [
+          [
+            "V3",
+            "V2"
+          ]
+        ],
+        "undirected": []
+      }
+    },
+    {
+      "method": "notears",
+      "standardize": false,
+      "status": "complete",
+      "reason": "acyclicity tolerance and inner solver convergence reached",
+      "graph": {
+        "nodes": [
+          "V3",
+          "V1",
+          "V5",
+          "V2",
+          "V4"
+        ],
+        "directed": [
+          [
+            "V1",
+            "V4"
+          ],
+          [
+            "V3",
+            "V2"
+          ]
+        ],
+        "undirected": []
+      },
+      "runtime_seconds": 0.09076708400061761,
+      "settings": {
+        "lambda1": 0.1,
+        "threshold": 0.2,
+        "max_outer": 30,
+        "max_inner": 150,
+        "h_tol": 1e-08,
+        "timeout": 20
+      },
+      "graph_metrics": {
+        "skeleton_precision": 0.5,
+        "skeleton_recall": 1.0,
+        "skeleton_f1": 0.6666666666666666,
+        "skeleton_true_positive": 1,
+        "skeleton_false_positive": 1,
+        "skeleton_false_negative": 0,
+        "cpdag_state_error": 1,
+        "compelled_correct": 0,
+        "compelled_predicted": 0,
+        "compelled_true": 0,
+        "compelled_precision": null,
+        "compelled_recall": null,
+        "compelled_reversed": 0,
+        "true_compelled_left_unresolved": 0,
+        "unresolved_directions": 2,
+        "output_unresolved_directions": 0,
+        "conflicting_directions": 0,
+        "comparison": "induced CPDAG",
+        "dag_arrow_symmetric_difference": 1,
+        "dag_exact_recovery": false
+      },
+      "h": 3.6922465085353906e-09,
+      "iterations": 1969,
+      "converged": true,
+      "preprocessing": {
+        "mode": "centered original units",
+        "mean": [
+          0.04521679867597714,
+          0.11698490132727736,
+          0.0526451101403739,
+          0.14404597620060725,
+          -0.5165515597030264
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fit_role": "training"
+      },
+      "graph_valid": true,
+      "candidates": {
+        "status": "single score-selected DAG",
+        "complete": false,
+        "count": 1
+      },
+      "prediction_metrics": {
+        "intervention_mean_nrmse": 0.05639648287351194,
+        "intervention_covariance_nrmse": 0.051118725940054205,
+        "prediction_candidate_count": 1,
+        "prediction_pooling": "uniform candidate mixture",
+        "normalization": "training SD for mean; training SD outer product for covariance"
+      },
+      "total_runtime_seconds": 0.09226904199931596,
+      "seed": 7,
+      "n": 200,
+      "noise": "equal",
+      "rescaled": true,
+      "data_digest": "dcd5874a27161278ee60ff65c29651701a1ae606889a656349c291c9268a5114",
+      "true_graph": {
+        "nodes": [
+          "V3",
+          "V1",
+          "V5",
+          "V2",
+          "V4"
+        ],
+        "directed": [
+          [
+            "V3",
+            "V2"
+          ]
+        ],
+        "undirected": []
+      }
+    }
+  ],
+  "campaigns": [
+    {
+      "seed": 7,
+      "n": 200,
+      "discovery_status": "complete",
+      "candidates": {
+        "status": "exhausted",
+        "complete": true,
+        "count": 6,
+        "expansions": 15
+      },
+      "rounds": 2,
+      "samples_per_round": 12,
+      "sample_budget_per_strategy": 24,
+      "training_digest": "42443f7f487dca20723fef5549ddfeccfeefe2e7e150cbbcc7b228737c142b90",
+      "planned_before_oracle": true,
+      "frozen_plans": {
+        "disagreement": [
+          {
+            "sequence": 0,
+            "intervention": {
+              "Y": -1.1880438205882962
+            },
+            "n": 12,
+            "score": 0.5676159946202799,
+            "candidate_digest": "42294d695089d70f6ba6ec3018581b191cf7fc8e3a3ee9138eca9a218e96cb8b",
+            "candidate_count": 6,
+            "candidate_set_complete": true,
+            "plan_id": "09a6951de69e7dd7d7f6592193b7f9dc4bf02b63e1a28b3e8f9a76f8cbc017f6"
+          },
+          {
+            "sequence": 1,
+            "intervention": {
+              "Y": -1.1880438205882962
+            },
+            "n": 12,
+            "score": 0.5676159946202799,
+            "candidate_digest": "42294d695089d70f6ba6ec3018581b191cf7fc8e3a3ee9138eca9a218e96cb8b",
+            "candidate_count": 6,
+            "candidate_set_complete": true,
+            "plan_id": "63891487cd1239e3c06268baf21ae6f085c5ed867242faedabc42245020d9a0f"
+          }
+        ],
+        "random": [
+          {
+            "sequence": 0,
+            "intervention": {
+              "Z": 0.6444025383821537
+            },
+            "n": 12,
+            "score": 0.43943122163060133,
+            "candidate_digest": "42294d695089d70f6ba6ec3018581b191cf7fc8e3a3ee9138eca9a218e96cb8b",
+            "candidate_count": 6,
+            "candidate_set_complete": true,
+            "plan_id": "471247fd4c356405d2ded7bcf90159e234681b0dc770480ad48cacfc3a983e09"
+          },
+          {
+            "sequence": 1,
+            "intervention": {
+              "X": -0.25029822133702945
+            },
+            "n": 12,
+            "score": 0.16669084181067997,
+            "candidate_digest": "42294d695089d70f6ba6ec3018581b191cf7fc8e3a3ee9138eca9a218e96cb8b",
+            "candidate_count": 6,
+            "candidate_set_complete": true,
+            "plan_id": "2e04c210eaf7e9d9cda2a1f94e3ea70ea0808caebb2009cb8f9737bed9afcdbc"
+          }
+        ]
+      },
+      "admissible_interventions": [
+        {
+          "variable": "Y",
+          "value": -1.1880438205882962,
+          "score": 0.5676159946202799,
+          "mean_score": 0.34882956207058075,
+          "covariance_score": 0.21878643254969915,
+          "bounds": [
+            -2.1272584333428495,
+            1.6296000176753644
+          ],
+          "units": "original data units",
+          "candidate_count": 6,
+          "normalization": "fixed training standard deviations",
+          "candidate_set_complete": true,
+          "candidate_scope": "provided candidate list; not a complete identified set",
+          "label": "candidate disagreement heuristic (mean + covariance)"
+        },
+        {
+          "variable": "Y",
+          "value": 0.6903854049208109,
+          "score": 0.5676159946202797,
+          "mean_score": 0.3488295620705805,
+          "covariance_score": 0.21878643254969915,
+          "bounds": [
+            -2.1272584333428495,
+            1.6296000176753644
+          ],
+          "units": "original data units",
+          "candidate_count": 6,
+          "normalization": "fixed training standard deviations",
+          "candidate_set_complete": true,
+          "candidate_scope": "provided candidate list; not a complete identified set",
+          "label": "candidate disagreement heuristic (mean + covariance)"
+        },
+        {
+          "variable": "X",
+          "value": -1.2183953935719578,
+          "score": 0.45908993626116,
+          "mean_score": 0.29239909445048007,
+          "covariance_score": 0.16669084181067997,
+          "bounds": [
+            -2.186492565806886,
+            1.6858961231328273
+          ],
+          "units": "original data units",
+          "candidate_count": 6,
+          "normalization": "fixed training standard deviations",
+          "candidate_set_complete": true,
+          "candidate_scope": "provided candidate list; not a complete identified set",
+          "label": "candidate disagreement heuristic (mean + covariance)"
+        },
+        {
+          "variable": "X",
+          "value": 0.717798950897899,
+          "score": 0.4590899362611599,
+          "mean_score": 0.2923990944504799,
+          "covariance_score": 0.16669084181067997,
+          "bounds": [
+            -2.186492565806886,
+            1.6858961231328273
+          ],
+          "units": "original data units",
+          "candidate_count": 6,
+          "normalization": "fixed training standard deviations",
+          "candidate_set_complete": true,
+          "candidate_scope": "provided candidate list; not a complete identified set",
+          "label": "candidate disagreement heuristic (mean + covariance)"
+        },
+        {
+          "variable": "Z",
+          "value": 0.6444025383821537,
+          "score": 0.43943122163060133,
+          "mean_score": 0.2831202036799727,
+          "covariance_score": 0.15631101795062863,
+          "bounds": [
+            -2.011827092694119,
+            1.5298124154075778
+          ],
+          "units": "original data units",
+          "candidate_count": 6,
+          "normalization": "fixed training standard deviations",
+          "candidate_set_complete": true,
+          "candidate_scope": "provided candidate list; not a complete identified set",
+          "label": "candidate disagreement heuristic (mean + covariance)"
+        },
+        {
+          "variable": "Z",
+          "value": -1.1264172156686947,
+          "score": 0.4394312216306011,
+          "mean_score": 0.2831202036799725,
+          "covariance_score": 0.15631101795062863,
+          "bounds": [
+            -2.011827092694119,
+            1.5298124154075778
+          ],
+          "units": "original data units",
+          "candidate_count": 6,
+          "normalization": "fixed training standard deviations",
+          "candidate_set_complete": true,
+          "candidate_scope": "provided candidate list; not a complete identified set",
+          "label": "candidate disagreement heuristic (mean + covariance)"
+        },
+        {
+          "variable": "Y",
+          "value": -0.24882920783374257,
+          "score": 0.21878643254969915,
+          "mean_score": 6.779273404243071e-33,
+          "covariance_score": 0.21878643254969915,
+          "bounds": [
+            -2.1272584333428495,
+            1.6296000176753644
+          ],
+          "units": "original data units",
+          "candidate_count": 6,
+          "normalization": "fixed training standard deviations",
+          "candidate_set_complete": true,
+          "candidate_scope": "provided candidate list; not a complete identified set",
+          "label": "candidate disagreement heuristic (mean + covariance)"
+        },
+        {
+          "variable": "X",
+          "value": -0.25029822133702945,
+          "score": 0.16669084181067997,
+          "mean_score": 1.5407439555097884e-32,
+          "covariance_score": 0.16669084181067997,
+          "bounds": [
+            -2.186492565806886,
+            1.6858961231328273
+          ],
+          "units": "original data units",
+          "candidate_count": 6,
+          "normalization": "fixed training standard deviations",
+          "candidate_set_complete": true,
+          "candidate_scope": "provided candidate list; not a complete identified set",
+          "label": "candidate disagreement heuristic (mean + covariance)"
+        },
+        {
+          "variable": "Z",
+          "value": -0.24100733864327054,
+          "score": 0.15631101795062863,
+          "mean_score": 7.395570986446985e-33,
+          "covariance_score": 0.15631101795062863,
+          "bounds": [
+            -2.011827092694119,
+            1.5298124154075778
+          ],
+          "units": "original data units",
+          "candidate_count": 6,
+          "normalization": "fixed training standard deviations",
+          "candidate_set_complete": true,
+          "candidate_scope": "provided candidate list; not a complete identified set",
+          "label": "candidate disagreement heuristic (mean + covariance)"
+        }
+      ],
+      "candidate_graphs": [
+        {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "directed": [
+            [
+              "X",
+              "Y"
+            ],
+            [
+              "X",
+              "Z"
+            ],
+            [
+              "Y",
+              "Z"
+            ]
+          ],
+          "undirected": []
+        },
+        {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "directed": [
+            [
+              "X",
+              "Y"
+            ],
+            [
+              "X",
+              "Z"
+            ],
+            [
+              "Z",
+              "Y"
+            ]
+          ],
+          "undirected": []
+        },
+        {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "directed": [
+            [
+              "X",
+              "Y"
+            ],
+            [
+              "Z",
+              "X"
+            ],
+            [
+              "Z",
+              "Y"
+            ]
+          ],
+          "undirected": []
+        },
+        {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "directed": [
+            [
+              "X",
+              "Z"
+            ],
+            [
+              "Y",
+              "X"
+            ],
+            [
+              "Y",
+              "Z"
+            ]
+          ],
+          "undirected": []
+        },
+        {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "directed": [
+            [
+              "Y",
+              "X"
+            ],
+            [
+              "Y",
+              "Z"
+            ],
+            [
+              "Z",
+              "X"
+            ]
+          ],
+          "undirected": []
+        },
+        {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "directed": [
+            [
+              "Y",
+              "X"
+            ],
+            [
+              "Z",
+              "X"
+            ],
+            [
+              "Z",
+              "Y"
+            ]
+          ],
+          "undirected": []
+        }
+      ],
+      "true_graph_candidate_indices_evaluation_only": [],
+      "status": "complete",
+      "heldout_batches": [
+        {
+          "intervention": {
+            "Y": -1.1880438205882962
+          },
+          "seed": 40007,
+          "n": 128,
+          "data_digest": "dbe86a691c1a3e9d1bcdde266fdb0db449de18ca597839bfc963ed9ed1078714"
+        },
+        {
+          "intervention": {
+            "Y": 0.6903854049208109
+          },
+          "seed": 40008,
+          "n": 128,
+          "data_digest": "5029b4a2b5b72ec12a70679d2e437da5e669a71c45486b91b777e21aa1717f33"
+        },
+        {
+          "intervention": {
+            "X": -1.2183953935719578
+          },
+          "seed": 40009,
+          "n": 128,
+          "data_digest": "7fe747c04c5cab536bcaf042ea243edb5df660e8f9c95e91832537a6311a3c67"
+        },
+        {
+          "intervention": {
+            "X": 0.717798950897899
+          },
+          "seed": 40010,
+          "n": 128,
+          "data_digest": "ee97eb9ad4a3f5a4f5a524e2050f64883c228c8c26b5352858fcbd0b2799f452"
+        },
+        {
+          "intervention": {
+            "Z": 0.6444025383821537
+          },
+          "seed": 40011,
+          "n": 128,
+          "data_digest": "adb699b7754f59bbe4fa9a0cec039c3b0df73ecbd8166a166d599c429d5a77a6"
+        },
+        {
+          "intervention": {
+            "Z": -1.1264172156686947
+          },
+          "seed": 40012,
+          "n": 128,
+          "data_digest": "e34611a2d65076b8c3352870b768aab022048e67c734380a0c5596302dc07246"
+        },
+        {
+          "intervention": {
+            "Y": -0.24882920783374257
+          },
+          "seed": 40013,
+          "n": 128,
+          "data_digest": "5ecb96469c357b9354e88f9aebfe25977a9467ad45119fce94d11663a5d906d6"
+        },
+        {
+          "intervention": {
+            "X": -0.25029822133702945
+          },
+          "seed": 40014,
+          "n": 128,
+          "data_digest": "a294ed14c5b55cfe1f1c5c72fbc8fd5fef89ed4624d9cffb2e8aeef059b6e6a0"
+        },
+        {
+          "intervention": {
+            "Z": -0.24100733864327054
+          },
+          "seed": 40015,
+          "n": 128,
+          "data_digest": "d59d8a160645b44d90c6992b275f85093eb0643ca7f033ec4940f78efcf03a0b"
+        }
+      ],
+      "heldout_excess_nll_per_nonintervened_variable": {
+        "disagreement": 0.03627273757236478,
+        "random": 0.03718816294117696,
+        "before_experiments": 0.13912075088796477
+      },
+      "campaigns": {
+        "disagreement": {
+          "weights": [
+            0.99999999999994,
+            2.999603372555384e-14,
+            2.999603372555299e-14,
+            2.9604540693259265e-19,
+            2.9604540693259265e-19,
+            1.842381062190506e-23
+          ],
+          "history": [
+            {
+              "batch_id": "disagreement-7-200-0",
+              "batch_digest": "eabddd95f5deaf32d436f6ac8d3f0a049daceafa9e993d55154ad7e786305a21",
+              "plan": {
+                "sequence": 0,
+                "intervention": {
+                  "Y": -1.1880438205882962
+                },
+                "n": 12,
+                "score": 0.5676159946202799,
+                "candidate_digest": "42294d695089d70f6ba6ec3018581b191cf7fc8e3a3ee9138eca9a218e96cb8b",
+                "candidate_count": 6,
+                "candidate_set_complete": true,
+                "plan_id": "09a6951de69e7dd7d7f6592193b7f9dc4bf02b63e1a28b3e8f9a76f8cbc017f6"
+              },
+              "log_likelihoods": [
+                -26.078872737185335,
+                -39.211766707543674,
+                -39.21176670754369,
+                -42.36711390990446,
+                -42.36711390990446,
+                -48.557130064635366
+              ],
+              "weights": [
+                0.9999958730370737,
+                1.9790411517816872e-06,
+                1.9790411517816593e-06,
+                8.435385726724951e-08,
+                8.435385726724951e-08,
+                1.7290800006367818e-10
+              ],
+              "label": "normalized plug-in likelihood support; not Bayesian posterior probabilities",
+              "candidate_set_complete": true
+            },
+            {
+              "batch_id": "disagreement-7-200-1",
+              "batch_digest": "d72bb03bee6f9db08dcfbfb6180aa00ab7fa676ada06176b847d9f8e83b7c036",
+              "plan": {
+                "sequence": 1,
+                "intervention": {
+                  "Y": -1.1880438205882962
+                },
+                "n": 12,
+                "score": 0.5676159946202799,
+                "candidate_digest": "42294d695089d70f6ba6ec3018581b191cf7fc8e3a3ee9138eca9a218e96cb8b",
+                "candidate_count": 6,
+                "candidate_set_complete": true,
+                "plan_id": "63891487cd1239e3c06268baf21ae6f085c5ed867242faedabc42245020d9a0f"
+              },
+              "log_likelihoods": [
+                -34.88645702758879,
+                -52.89127428836752,
+                -52.89127428836755,
+                -61.26198996338606,
+                -61.26198996338606,
+                -64.75659804841077
+              ],
+              "weights": [
+                0.99999999999994,
+                2.999603372555384e-14,
+                2.999603372555299e-14,
+                2.9604540693259265e-19,
+                2.9604540693259265e-19,
+                1.842381062190506e-23
+              ],
+              "label": "normalized plug-in likelihood support; not Bayesian posterior probabilities",
+              "candidate_set_complete": true
+            }
+          ]
+        },
+        "random": {
+          "weights": [
+            0.926432813266609,
+            0.00429095200140966,
+            0.0003940254030507289,
+            0.025830777025849738,
+            0.043039558974728574,
+            1.1873328352666091e-05
+          ],
+          "history": [
+            {
+              "batch_id": "random-7-200-0",
+              "batch_digest": "59e423fdef6488221eee9cb73a3c76ee0f51530057877847e79b081c17fc3bc5",
+              "plan": {
+                "sequence": 0,
+                "intervention": {
+                  "Z": 0.6444025383821537
+                },
+                "n": 12,
+                "score": 0.43943122163060133,
+                "candidate_digest": "42294d695089d70f6ba6ec3018581b191cf7fc8e3a3ee9138eca9a218e96cb8b",
+                "candidate_count": 6,
+                "candidate_set_complete": true,
+                "plan_id": "471247fd4c356405d2ded7bcf90159e234681b0dc770480ad48cacfc3a983e09"
+              },
+              "log_likelihoods": [
+                -25.5842237273896,
+                -30.95905663370219,
+                -32.513614376279456,
+                -25.584223727389595,
+                -24.318033998075812,
+                -32.51361437627945
+              ],
+              "weights": [
+                0.18005367373821152,
+                0.000833953267440886,
+                0.0001761999842240892,
+                0.18005367373821216,
+                0.6387062992876873,
+                0.00017619998422409045
+              ],
+              "label": "normalized plug-in likelihood support; not Bayesian posterior probabilities",
+              "candidate_set_complete": true
+            },
+            {
+              "batch_id": "random-7-200-1",
+              "batch_digest": "25904fedac9075a998074b5b562fb42755e2ee35d10a902c3d926b1e1bed088b",
+              "plan": {
+                "sequence": 1,
+                "intervention": {
+                  "X": -0.25029822133702945
+                },
+                "n": 12,
+                "score": 0.16669084181067997,
+                "candidate_digest": "42294d695089d70f6ba6ec3018581b191cf7fc8e3a3ee9138eca9a218e96cb8b",
+                "candidate_count": 6,
+                "candidate_set_complete": true,
+                "plan_id": "2e04c210eaf7e9d9cda2a1f94e3ea70ea0808caebb2009cb8f9737bed9afcdbc"
+              },
+              "log_likelihoods": [
+                -22.286760442754215,
+                -22.286760442754215,
+                -23.120051217263175,
+                -25.866535280181605,
+                -26.62217202952091,
+                -26.622172029520918
+              ],
+              "weights": [
+                0.926432813266609,
+                0.00429095200140966,
+                0.0003940254030507289,
+                0.025830777025849738,
+                0.043039558974728574,
+                1.1873328352666091e-05
+              ],
+              "label": "normalized plug-in likelihood support; not Bayesian posterior probabilities",
+              "candidate_set_complete": true
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "hidden_violation": [
+    {
+      "method": "pc",
+      "standardize": null,
+      "status": "complete",
+      "reason": "adjacency search exhausted",
+      "graph": {
+        "nodes": [
+          "X",
+          "Y"
+        ],
+        "directed": [],
+        "undirected": [
+          [
+            "X",
+            "Y"
+          ]
+        ]
+      },
+      "runtime_seconds": 0.00013433399908535648,
+      "settings": {
+        "alpha": 0.01,
+        "max_depth": 3,
+        "max_tests": 10000,
+        "timeout": 10,
+        "collider_variant": "first-separating-set (stable-ID order); not conservative PC",
+        "orientation": "simultaneous conflict-checked Meek R1\u2013R3; no background knowledge",
+        "oracle": false,
+        "dataset_id": "68620e4fe103976076775d56c5cce6f3aff2c2488fb6ba2605879daab4ec3691"
+      },
+      "tests": 1,
+      "conflicts": [],
+      "candidates": {
+        "status": "exhausted",
+        "complete": true,
+        "count": 2,
+        "expansions": 3
+      },
+      "prediction_metrics": {
+        "intervention_mean_nrmse": 0.3193348220107163,
+        "intervention_covariance_nrmse": 0.20799712723293376,
+        "prediction_candidate_count": 2,
+        "prediction_pooling": "uniform candidate mixture",
+        "normalization": "training SD for mean; training SD outer product for covariance"
+      },
+      "total_runtime_seconds": 0.0011047499992855592,
+      "seed": 7,
+      "n": 800,
+      "violated_assumption": "causal sufficiency",
+      "truth_has_no_direct_observed_edge": true,
+      "warning": "This is simulator knowledge, not a learner diagnosis."
+    },
+    {
+      "method": "notears",
+      "standardize": true,
+      "status": "complete",
+      "reason": "acyclicity tolerance and inner solver convergence reached",
+      "graph": {
+        "nodes": [
+          "X",
+          "Y"
+        ],
+        "directed": [],
+        "undirected": []
+      },
+      "runtime_seconds": 0.0203500419993361,
+      "settings": {
+        "lambda1": 0.1,
+        "threshold": 0.2,
+        "max_outer": 30,
+        "max_inner": 150,
+        "h_tol": 1e-08,
+        "timeout": 20
+      },
+      "h": 4.228482008983292e-09,
+      "iterations": 213,
+      "converged": true,
+      "preprocessing": {
+        "mode": "standardized training data",
+        "mean": [
+          -0.05874902023533726,
+          -0.0389144756071722
+        ],
+        "scale": [
+          1.1440444089058603,
+          1.1411292030135742
+        ],
+        "fit_role": "training"
+      },
+      "graph_valid": true,
+      "candidates": {
+        "status": "single score-selected DAG",
+        "complete": false,
+        "count": 1
+      },
+      "prediction_metrics": {
+        "intervention_mean_nrmse": 0.04356151011604733,
+        "intervention_covariance_nrmse": 0.004912440616358244,
+        "prediction_candidate_count": 1,
+        "prediction_pooling": "uniform candidate mixture",
+        "normalization": "training SD for mean; training SD outer product for covariance"
+      },
+      "total_runtime_seconds": 0.02105291599946213,
+      "seed": 7,
+      "n": 800,
+      "violated_assumption": "causal sufficiency",
+      "truth_has_no_direct_observed_edge": true,
+      "warning": "This is simulator knowledge, not a learner diagnosis."
+    }
+  ],
+  "configuration": {
+    "seeds": [
+      7
+    ],
+    "sample_sizes": [
+      200
+    ],
+    "noise": [
+      "equal"
+    ],
+    "d": 5,
+    "edge_probability": 0.25,
+    "rescaling": [
+      0.2,
+      0.5,
+      1.0,
+      2.0,
+      5.0
+    ],
+    "pc": {
+      "alpha": 0.01,
+      "max_depth": 3,
+      "max_tests": 10000,
+      "timeout": 10
+    },
+    "notears": {
+      "lambda1": 0.1,
+      "threshold": 0.2,
+      "max_outer": 30,
+      "max_inner": 150,
+      "h_tol": 1e-08,
+      "timeout": 20
+    },
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "environment": {
+    "python": "3.14.3",
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "generated_utc": "2026-10-09T08:00:44.350124+00:00",
+    "wall_seconds": 0.39685616600036155,
+    "peak_rss_mib": 72.875
+  },
+  "summary": {
+    "notears/original": {
+      "runs": 2,
+      "statuses": {
+        "complete": 2
+      },
+      "runtime_seconds_sum": 0.11422375100119098,
+      "failures_or_incomplete": 0,
+      "skeleton_precision_mean": 0.75,
+      "skeleton_precision_evaluated_runs": 2,
+      "skeleton_recall_mean": 1.0,
+      "skeleton_recall_evaluated_runs": 2,
+      "skeleton_f1_mean": 0.8333333333333333,
+      "skeleton_f1_evaluated_runs": 2,
+      "cpdag_state_error_mean": 0.5,
+      "cpdag_state_error_evaluated_runs": 2,
+      "unresolved_directions_mean": 1.5,
+      "unresolved_directions_evaluated_runs": 2,
+      "conflicting_directions_mean": 0.0,
+      "conflicting_directions_evaluated_runs": 2,
+      "intervention_mean_nrmse_mean": 0.055484117092265514,
+      "intervention_mean_nrmse_evaluated_runs": 2,
+      "intervention_covariance_nrmse_mean": 0.04874238946825568,
+      "intervention_covariance_nrmse_evaluated_runs": 2,
+      "compelled_correct_sum": 0,
+      "compelled_predicted_sum": 0,
+      "compelled_true_sum": 0,
+      "compelled_reversed_sum": 0
+    },
+    "notears/standardized": {
+      "runs": 2,
+      "statuses": {
+        "numerical failure": 2
+      },
+      "runtime_seconds_sum": 0.02077258400095161,
+      "failures_or_incomplete": 2,
+      "skeleton_precision_mean": 0.0,
+      "skeleton_precision_evaluated_runs": 2,
+      "skeleton_recall_mean": 0.0,
+      "skeleton_recall_evaluated_runs": 2,
+      "skeleton_f1_mean": 0.0,
+      "skeleton_f1_evaluated_runs": 2,
+      "cpdag_state_error_mean": 1.0,
+      "cpdag_state_error_evaluated_runs": 2,
+      "unresolved_directions_mean": 0.0,
+      "unresolved_directions_evaluated_runs": 2,
+      "conflicting_directions_mean": 0.0,
+      "conflicting_directions_evaluated_runs": 2,
+      "intervention_mean_nrmse_mean": null,
+      "intervention_mean_nrmse_evaluated_runs": 0,
+      "intervention_covariance_nrmse_mean": null,
+      "intervention_covariance_nrmse_evaluated_runs": 0,
+      "compelled_correct_sum": 0,
+      "compelled_predicted_sum": 0,
+      "compelled_true_sum": 0,
+      "compelled_reversed_sum": 0
+    },
+    "pc/scale-invariant": {
+      "runs": 2,
+      "statuses": {
+        "complete": 2
+      },
+      "runtime_seconds_sum": 0.0028621259989449754,
+      "failures_or_incomplete": 0,
+      "skeleton_precision_mean": 1.0,
+      "skeleton_precision_evaluated_runs": 2,
+      "skeleton_recall_mean": 1.0,
+      "skeleton_recall_evaluated_runs": 2,
+      "skeleton_f1_mean": 1.0,
+      "skeleton_f1_evaluated_runs": 2,
+      "cpdag_state_error_mean": 0.0,
+      "cpdag_state_error_evaluated_runs": 2,
+      "unresolved_directions_mean": 1.0,
+      "unresolved_directions_evaluated_runs": 2,
+      "conflicting_directions_mean": 0.0,
+      "conflicting_directions_evaluated_runs": 2,
+      "intervention_mean_nrmse_mean": 0.10101019352626127,
+      "intervention_mean_nrmse_evaluated_runs": 2,
+      "intervention_covariance_nrmse_mean": 0.056715439227407335,
+      "intervention_covariance_nrmse_evaluated_runs": 2,
+      "compelled_correct_sum": 0,
+      "compelled_predicted_sum": 0,
+      "compelled_true_sum": 0,
+      "compelled_reversed_sum": 0
+    }
+  }
+}

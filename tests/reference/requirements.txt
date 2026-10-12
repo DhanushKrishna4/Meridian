@@ -1,0 +1,3 @@
+# Optional native development comparison only. Never included in Pyodide.
+-r ../../requirements-dev.txt
+causal-learn==0.1.4.4

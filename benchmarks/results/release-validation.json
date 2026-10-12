@@ -1,0 +1,34 @@
+{
+  "verified_date_local": "2026-10-10",
+  "timezone": "Asia/Kolkata",
+  "native": {
+    "python": "3.14.3",
+    "tests_passed": 159,
+    "seconds": 15.19
+  },
+  "isolated_installed_wheel": {
+    "tests_passed": 159,
+    "seconds": 15.72,
+    "working_directory": "/private/tmp",
+    "checkout_pythonpath": false
+  },
+  "browser": {
+    "report": "browser.json",
+    "passed": 18,
+    "failed": 0,
+    "milliseconds": 4317.20000000298,
+    "path": "/Meridian/verification.html"
+  },
+  "production": {
+    "command": "cd web && npm run build",
+    "success": true,
+    "static_bytes": 37081006
+  },
+  "published": false,
+  "limitations": [
+    "Chromium only; Safari and Firefox unverified",
+    "Browser heap not instrumented",
+    "Sparse benchmark graph seeds; four standardized NOTEARS failures retained",
+    "Remote GitHub Actions and public deployment not run"
+  ]
+}

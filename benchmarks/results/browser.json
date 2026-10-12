@@ -1,0 +1,106 @@
+{
+  "timestamp": "2026-10-10T08:38:35.062Z",
+  "path": "/Meridian/verification.html",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "milliseconds": 4317.20000000298,
+  "passed": 18,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Protocol rejects injected stale worker generations and stale run IDs",
+      "passed": true,
+      "milliseconds": 0.6000000089406967
+    },
+    {
+      "name": "Watchdog terminates an unresponsive worker and allows retry",
+      "passed": true,
+      "milliseconds": 21.299999997019768
+    },
+    {
+      "name": "Cold Python/NumPy startup + exact native fixture parity (1e-8)",
+      "passed": true,
+      "milliseconds": 1553.2999999970198
+    },
+    {
+      "name": "Native experiment imports across NumPy runtimes",
+      "passed": true,
+      "milliseconds": 52.79999999701977
+    },
+    {
+      "name": "Seeded load, PC-stable and real three-candidate enumeration",
+      "passed": true,
+      "milliseconds": 29.900000005960464
+    },
+    {
+      "name": "Single and simultaneous interventions + factual invariance",
+      "passed": true,
+      "milliseconds": 5.200000002980232
+    },
+    {
+      "name": "Covariance-sensitive disagreement and real oracle campaign",
+      "passed": true,
+      "milliseconds": 22.399999991059303
+    },
+    {
+      "name": "Deterministic export/restore retains fitted parameters and outcomes",
+      "passed": true,
+      "milliseconds": 27.400000005960464
+    },
+    {
+      "name": "Tampered outcomes and invalid schema rejected without losing state",
+      "passed": true,
+      "milliseconds": 26.399999991059303
+    },
+    {
+      "name": "SciPy loads lazily; NOTEARS computes and exposes diagnostics",
+      "passed": true,
+      "milliseconds": 1358
+    },
+    {
+      "name": "Bootstrap real replicate progress and conditional effect intervals",
+      "passed": true,
+      "milliseconds": 17
+    },
+    {
+      "name": "Cancellation stops active worker; next query restores completed state",
+      "passed": true,
+      "milliseconds": 1040.7999999970198
+    },
+    {
+      "name": "Repeated real runs retain the latest completed dataset state",
+      "passed": true,
+      "milliseconds": 69.09999999403954
+    },
+    {
+      "name": "CSV stays local; no fabricated outcomes; explicit model simulation",
+      "passed": true,
+      "milliseconds": 19.80000001192093
+    },
+    {
+      "name": "Malformed/missing CSV rejected clearly, current observations retained",
+      "passed": true,
+      "milliseconds": 9.700000002980232
+    },
+    {
+      "name": "Measured experimental CSV imported separately and evidence counted once",
+      "passed": true,
+      "milliseconds": 22
+    },
+    {
+      "name": "Model building is explicit; cyclic model rejected",
+      "passed": true,
+      "milliseconds": 21.19999998807907
+    },
+    {
+      "name": "Truth reveal does not modify discovery or support",
+      "passed": true,
+      "milliseconds": 14.399999991059303
+    }
+  ],
+  "externalResourceRequests": [],
+  "tolerance": "1e-8 relative to max(1,abs(reference))",
+  "notes": [
+    "UI layout and keyboard checks are recorded separately.",
+    "Repeated-run test checks state cleanup behavior; browser heap memory is not instrumented."
+  ]
+}

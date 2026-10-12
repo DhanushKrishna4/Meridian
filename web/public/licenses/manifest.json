@@ -1,0 +1,78 @@
+{
+  "react-LICENSE.txt": {
+    "source": "npm:react@19.1.1/LICENSE",
+    "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+  },
+  "react-dom-LICENSE.txt": {
+    "source": "npm:react-dom@19.1.1/LICENSE",
+    "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+  },
+  "scheduler-LICENSE.txt": {
+    "source": "npm:scheduler@0.26.0/LICENSE",
+    "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+  },
+  "numpy-wheel-notices.txt": {
+    "source": "../runtime/numpy-2.0.2-cp312-cp312-pyodide_2024_0_wasm32.whl",
+    "sha256": "2df88839de6268d19fa750ea4323cac6a42281987f14154c8f320fe342eeb013"
+  },
+  "scipy-wheel-notices.txt": {
+    "source": "../runtime/scipy-1.14.1-cp312-cp312-pyodide_2024_0_wasm32.whl",
+    "sha256": "b7b89bdd08028d574ae00dcf1e7c857de2ed0b536ba288d5408a636bd8301d60"
+  },
+  "pyodide-LICENSE.txt": {
+    "source": "https://raw.githubusercontent.com/pyodide/pyodide/0.27.7/LICENSE",
+    "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+  },
+  "cpython-LICENSE.txt": {
+    "source": "https://raw.githubusercontent.com/python/cpython/v3.12.7/LICENSE",
+    "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+  },
+  "openblas-LICENSE.txt": {
+    "source": "https://raw.githubusercontent.com/OpenMathLib/OpenBLAS/v0.3.26/LICENSE",
+    "sha256": "190b5a9c8d9723fe958ad33916bd7346d96fab3c5ea90832bb02d854f620fcff"
+  },
+  "emscripten-LICENSE.txt": {
+    "source": "https://raw.githubusercontent.com/emscripten-core/emscripten/3.1.58/LICENSE",
+    "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+  },
+  "numpy-bundled-LICENSES.txt": {
+    "source": "https://raw.githubusercontent.com/numpy/numpy/v2.0.2/LICENSES_bundled.txt",
+    "sha256": "5cbf69d9183aeb2c56fb208e78bf2981d1bb8da655b3a59fb27409aa639cabda"
+  },
+  "scipy-bundled-LICENSES.txt": {
+    "source": "https://raw.githubusercontent.com/scipy/scipy/v1.14.1/LICENSES_bundled.txt",
+    "sha256": "2ef7ab02d0a5f17837658d11761ef9892c38276714bed3338ed145bd2cf9865b"
+  },
+  "musl-COPYRIGHT.txt": {
+    "source": "https://raw.githubusercontent.com/emscripten-core/emscripten/3.1.58/system/lib/libc/musl/COPYRIGHT",
+    "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+  },
+  "lapack-LICENSE.txt": {
+    "source": "https://raw.githubusercontent.com/OpenMathLib/OpenBLAS/v0.3.26/lapack-netlib/LICENSE",
+    "sha256": "978539245c405775bf347b1256c36df4daf8b69a64b099e94b1d53742201621e"
+  },
+  "numpy-lapack-lite-LICENSE.txt": {
+    "source": "https://raw.githubusercontent.com/numpy/numpy/v2.0.2/numpy/linalg/lapack_lite/LICENSE.txt",
+    "sha256": "a14cc25e10d40a3aa705b7de2fb764a6535d8ee9b2db4e1724900585457dfd55"
+  },
+  "numpy-libdivide-LICENSE.txt": {
+    "source": "https://raw.githubusercontent.com/numpy/numpy/v2.0.2/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+    "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+  },
+  "scipy-lbfgsb-NOTICE.txt": {
+    "source": "https://raw.githubusercontent.com/scipy/scipy/v1.14.1/scipy/optimize/lbfgsb_src/README",
+    "sha256": "14285792eef6daed32a2e646854a1083b5730ead24389e8c0a88587124164ab8"
+  },
+  "numpy-dragon4-LICENSE.txt": {
+    "source": "https://raw.githubusercontent.com/numpy/numpy/v2.0.2/numpy/_core/src/multiarray/dragon4.c",
+    "sha256": "314d37e839e58a966839d94cba51c35a880c7824190d87aa88210b75761e61c4"
+  },
+  "numpy-LICENSE.txt": {
+    "source": "../runtime/numpy-2.0.2-cp312-cp312-pyodide_2024_0_wasm32.whl:dist-info/LICENSE.txt",
+    "sha256": "01fb016849aa427edb1bbbbd55f91c26ca6cadb32a5b20e7f000655dd05b0760"
+  },
+  "scipy-LICENSE.txt": {
+    "source": "../runtime/scipy-1.14.1-cp312-cp312-pyodide_2024_0_wasm32.whl:dist-info/LICENSE.txt",
+    "sha256": "c29fb8e5936f33237a8b15256b4c6e93037f05bbf58c3d7b5755aede4c200173"
+  }
+}
