@@ -12,6 +12,14 @@ interface is a fully static application: no Python server, analysis service,
 API key or cloud compute. Runtime assets are bundled with the site. Uploaded
 CSV data stays in the browser; persisting raw uploaded data is opt-in.
 
+![Meridian structure workspace](docs/redesign/after/initial-1440.jpg)
+
+The interface follows four tasks: **Structure**, **Experiments**, **What if?**,
+and **Data**. A wide causal diagram and competing explanations lead into real
+intervention predictions, experiment records, and model diagnostics. The
+[redesign record](docs/redesign/DESIGN.md) includes before/after captures and
+the scope of the completed checks.
+
 ## Run locally
 
 Tested native set: Python 3.14, NumPy 2.4.2, SciPy 1.17.1. The pinned browser set

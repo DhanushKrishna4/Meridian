@@ -21,6 +21,8 @@ alongside the self-hosted runtime; it does not depend on remote license links.
 | OpenBLAS | 0.3.26 | [BSD-3-Clause](web/public/licenses/openblas-LICENSE.txt), [included LAPACK license](web/public/licenses/lapack-LICENSE.txt) |
 | React / React DOM | 19.1.1 | [MIT](web/public/licenses/react-LICENSE.txt), [React DOM copy](web/public/licenses/react-dom-LICENSE.txt) |
 | React scheduler | 0.26.0 | [MIT](web/public/licenses/scheduler-LICENSE.txt) |
+| DM Sans (Fontsource package) | 5.3.0 | [SIL Open Font License 1.1](web/public/licenses/dm-sans-OFL.txt) |
+| IBM Plex Mono (Fontsource package) | 5.3.0 | [SIL Open Font License 1.1](web/public/licenses/ibm-plex-mono-OFL.txt) |
 
 The license index additionally contains NumPy lapack-lite, libdivide and Dragon4
 notices, and SciPy L-BFGS-B's notice. Wheel-embedded component notices are retained
@@ -37,9 +39,9 @@ Corresponding source, build configuration and patches are available at the
 [Pyodide 0.27.7 source release](https://github.com/pyodide/pyodide/tree/0.27.7)
 and the component source versions linked in the license index.
 
-No font files are bundled or fetched from font services. CSS lists DM Sans and
-IBM Plex Mono as optional locally installed faces, followed by system fallbacks;
-those names alone do not distribute the fonts.
+DM Sans and IBM Plex Mono are bundled from the pinned Fontsource packages and
+served from the same static site as the application. Their license texts are
+included above. No remote font service is required.
 
 Native NumPy 2.4.2 and SciPy 1.17.1 are separately installed packages, not
 redistributed native binaries. Vite, TypeScript and build tooling are pinned in

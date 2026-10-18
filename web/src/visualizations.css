@@ -1,0 +1,292 @@
+/* Shared scientific figures. All selectors are scoped to the visualization layer. */
+.viz-graph {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  color: var(--text, #dce6ee);
+  font-family: inherit;
+  min-height: 0;
+  max-height: none;
+}
+.viz-graph .viz-edge {
+  outline: none;
+}
+.viz-graph [role="button"] {
+  cursor: pointer;
+}
+.viz-graph .viz-edge-hit {
+  stroke: transparent;
+  stroke-width: 22;
+}
+.viz-graph .viz-edge-line {
+  stroke: var(--muted, #95a9b8);
+  stroke-width: 1.8;
+  fill: none;
+  transition:
+    stroke 0.16s ease,
+    stroke-width 0.16s ease;
+}
+.viz-graph .viz-edge.unresolved .viz-edge-line {
+  stroke-dasharray: 7 6;
+}
+.viz-graph .viz-edge.directed .viz-edge-line {
+  stroke: var(--teal, #6ee4cf);
+}
+.viz-graph .viz-edge.conflicting .viz-edge-line {
+  stroke: var(--error, #f09c90);
+  stroke-dasharray: 3 4;
+}
+.viz-graph .viz-edge:hover .viz-edge-line,
+.viz-graph .viz-edge.selected .viz-edge-line,
+.viz-graph .viz-edge:focus-visible .viz-edge-line {
+  stroke: var(--amber, #e4bc83);
+  stroke-width: 3;
+}
+.viz-graph .viz-edge-label {
+  fill: var(--muted, #95a9b8);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.15px;
+  paint-order: stroke;
+  stroke: var(--panel, #101b26);
+  stroke-width: 7;
+  stroke-linejoin: round;
+}
+.viz-graph .viz-edge.conflicting .viz-edge-label {
+  fill: var(--error, #f09c90);
+}
+.viz-graph .viz-node {
+  outline: none;
+}
+.viz-graph .viz-node-disc {
+  fill: var(--panel, #101b26);
+  stroke: var(--muted, #95a9b8);
+  stroke-width: 1.5;
+  transition:
+    stroke 0.16s ease,
+    fill 0.16s ease;
+}
+.viz-graph .viz-node-focus {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 1.5;
+}
+.viz-graph .viz-node-name {
+  fill: var(--text, #dce6ee);
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+}
+.viz-graph .viz-node-index {
+  fill: var(--muted, #95a9b8);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+}
+.viz-graph .viz-node:hover .viz-node-disc,
+.viz-graph .viz-node:focus-visible .viz-node-disc {
+  stroke: var(--teal, #6ee4cf);
+}
+.viz-graph .viz-node:focus-visible .viz-node-focus {
+  stroke: var(--teal, #6ee4cf);
+}
+.viz-graph .viz-node.selected .viz-node-disc {
+  stroke: var(--teal, #6ee4cf);
+  fill: #17332f;
+  stroke-width: 2;
+}
+.viz-graph .viz-node.selected .viz-node-name,
+.viz-graph .viz-node.selected .viz-node-index {
+  fill: var(--teal, #6ee4cf);
+}
+.viz-graph .viz-node.intervened .viz-node-disc {
+  stroke: var(--amber, #e4bc83);
+  fill: #302b23;
+}
+.viz-graph .viz-node.intervened .viz-node-index {
+  fill: var(--amber, #e4bc83);
+}
+.viz-graph-mini {
+  max-height: none;
+}
+.viz-graph-mini .viz-edge {
+  cursor: inherit;
+}
+.viz-graph-mini .viz-edge-line {
+  stroke-width: 1.6;
+}
+.viz-graph-mini .viz-node {
+  cursor: inherit;
+}
+.viz-graph-mini .viz-node-disc {
+  stroke-width: 1.2;
+}
+.viz-graph-mini .viz-node-name {
+  letter-spacing: -0.4px;
+}
+.viz-histogram,
+.viz-distribution {
+  width: 100%;
+  min-width: 0;
+}
+.viz-histogram > svg,
+.viz-density-chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.viz-histogram .viz-axis,
+.viz-distribution .viz-axis {
+  stroke: var(--muted, #95a9b8);
+  stroke-width: 1;
+}
+.viz-histogram .viz-grid,
+.viz-distribution .viz-grid {
+  stroke: var(--line, #263642);
+  stroke-width: 1;
+  stroke-dasharray: 3 5;
+}
+.viz-histogram .viz-tick,
+.viz-distribution .viz-tick {
+  fill: var(--muted, #95a9b8);
+  font-family: inherit;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.viz-histogram .viz-axis-title,
+.viz-distribution .viz-axis-title {
+  fill: var(--muted, #95a9b8);
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.viz-histogram .viz-histogram-bar {
+  fill: var(--teal, #6ee4cf);
+  opacity: 0.7;
+}
+.viz-histogram .viz-histogram-bar:hover {
+  opacity: 1;
+}
+.viz-chart-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 8px;
+  color: var(--muted, #95a9b8);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.viz-distribution-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-bottom: 22px;
+}
+.viz-series-key {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text, #dce6ee);
+}
+.viz-series-key i {
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+}
+.viz-series-key.viz-condition i {
+  background: repeating-linear-gradient(
+    to right,
+    currentColor 0 5px,
+    transparent 5px 8px
+  );
+}
+.viz-series-key strong {
+  font-weight: 400;
+  color: var(--muted, #95a9b8);
+  font-variant-numeric: tabular-nums;
+}
+.viz-series-key.viz-condition {
+  color: var(--amber, #e4bc83);
+}
+.viz-series-key.viz-intervene {
+  color: var(--teal, #6ee4cf);
+}
+.viz-distribution .viz-condition {
+  --series-color: var(--amber, #e4bc83);
+}
+.viz-distribution .viz-intervene {
+  --series-color: var(--teal, #6ee4cf);
+}
+.viz-distribution .viz-density-fill {
+  fill: var(--series-color);
+  opacity: 0.08;
+  stroke: none;
+}
+.viz-distribution .viz-density-line {
+  fill: none;
+  stroke: var(--series-color);
+  stroke-width: 2.4;
+}
+.viz-distribution .viz-condition .viz-density-line {
+  stroke-dasharray: 6 5;
+}
+.viz-distribution .viz-point-mass {
+  stroke: var(--series-color);
+  stroke-width: 2;
+  stroke-dasharray: 5 5;
+}
+.viz-distribution .viz-condition .viz-point-mass {
+  stroke-dashoffset: 5;
+}
+.viz-distribution .viz-point-cap {
+  stroke: var(--series-color);
+  stroke-width: 2;
+  fill: none;
+}
+@media (max-width: 600px) {
+  .viz-graph .viz-edge-label {
+    letter-spacing: 0.4px;
+  }
+  .viz-graph .viz-node-index {
+    letter-spacing: 0.6px;
+  }
+  .viz-graph .viz-node-disc {
+    stroke-width: 2;
+  }
+  .viz-graph .viz-edge-line {
+    stroke-width: 2.5;
+  }
+  .viz-graph-mini .viz-node-disc {
+    stroke-width: 1.2;
+  }
+  .viz-graph-mini .viz-edge-line {
+    stroke-width: 1.6;
+  }
+  .viz-chart-caption {
+    font-size: 11px;
+    gap: 10px;
+  }
+  .viz-distribution-legend {
+    margin-bottom: 18px;
+    gap: 10px;
+  }
+  .viz-series-key {
+    font-size: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .viz-graph .viz-edge-line,
+  .viz-graph .viz-node-disc {
+    transition: none;
+  }
+}

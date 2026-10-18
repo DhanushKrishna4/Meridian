@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.14.3, pytest-8.4.2, pluggy-1.6.0
+rootdir: /Users/dhanush/Desktop/Projects/Meridian
+configfile: pyproject.toml
+testpaths: tests
+collected 159 items
+
+tests/reference/test_reference.py .........                              [  5%]
+tests/test_api.py ............................................           [ 33%]
+tests/test_evaluation.py .......                                         [ 37%]
+tests/test_experiments.py .......................                        [ 52%]
+tests/test_graphs.py .............                                       [ 60%]
+tests/test_notears.py ......                                             [ 64%]
+tests/test_pc.py ...............                                         [ 73%]
+tests/test_scm.py ..................................                     [ 94%]
+tests/test_statistics.py ........                                        [100%]
+
+============================= 159 passed in 34.54s =============================
