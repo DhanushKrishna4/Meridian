@@ -1,5 +1,33 @@
 # Public deployment
 
+## Redesign release — 2026-10-18
+
+The redesigned application was published from
+[`ad1573c`](https://github.com/DhanushKrishna4/Meridian/commit/ad1573c80e10f4295e87994c741a439cee062af1).
+[Actions run 39143413597](https://github.com/DhanushKrishna4/Meridian/actions/runs/39143413597)
+completed both the build and Pages deployment successfully. CI reported
+**154 passed, 5 optional reference checks skipped** in 4.98 seconds, followed by
+successful dependency installation, TypeScript validation, Vite build and
+artifact deployment. The local reference-enabled run passed all **159 tests**.
+
+The interface now separates Structure, Experiments, What if?, and Data, with a
+wide causal diagram, model comparisons and full-width query results. Before/after
+screenshots, the **18/18 local browser-engine report**, and visible workflow
+results are in the [redesign record](redesign/DESIGN.md).
+
+The final browser pass was blocked by the browser tool's URL security policy,
+even after the user confirmed site access was allowed. No hosted-browser run is
+claimed for this redesign. The exact unverified controls and final-spacing
+captures are listed in the [remaining verification limits](redesign/DESIGN.md#remaining-verification-limits).
+The successful Pages deployment establishes publication, not those UI results.
+
+GitHub resolves the redesign commit's author and committer to `DhanushKrishna4`
+using `195171913+DhanushKrishna4@users.noreply.github.com`. Its message contains no
+co-author trailers. The public contributors API still listed only that account
+after the push. The numerical engine and worker contracts are unchanged.
+
+## Initial release
+
 Published on 2026-10-13 (Asia/Kolkata).
 
 - Public repository: [DhanushKrishna4/Meridian](https://github.com/DhanushKrishna4/Meridian)
