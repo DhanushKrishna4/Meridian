@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "1200×630, 8-bit truecolor RGB PNG",
+    "Opaque sRGB with embedded profile",
+    "Under 1 MB",
+    "Production image identical to source export",
+    "Unique static OG/Twitter tags with matching text and image",
+    "Absolute HTTPS canonical and image URLs with /Meridian/ case",
+    "HTTP initial HTML metadata verified",
+    "HTTP image/png signature and full SHA-256 match; no fallback HTML"
+  ],
+  "bytes": 89267,
+  "sha256": "cb3027b8b46063277f17da512c78b1fbf2f30618c79514e93affeaa266425c58",
+  "delivery": {
+    "page": "https://dhanushkrishna4.github.io/Meridian/",
+    "image": "https://dhanushkrishna4.github.io/Meridian/og-v1.png",
+    "status": 200,
+    "contentType": "image/png",
+    "sha256": "cb3027b8b46063277f17da512c78b1fbf2f30618c79514e93affeaa266425c58"
+  }
+}

@@ -128,11 +128,22 @@ build passed; [`build.txt`](build.txt) records their output. Python algorithms
 and application behavior were not changed, so this task did not rerun the native
 numerical suite locally.
 
-After deployment, the same verifier can target the public origin:
+The same verifier can target the public origin:
 
 ```sh
 node tools/og/verify.mjs --base-url https://dhanushkrishna4.github.io/Meridian/ --report tools/og/verification-live.json
 ```
+
+**Live verification passed on 2026-10-21.** The
+[Pages workflow](https://github.com/DhanushKrishna4/Meridian/actions/runs/39621650040)
+successfully built and deployed
+[`3aa61a1`](https://github.com/DhanushKrishna4/Meridian/commit/3aa61a1177af58d3c208ef9d1cf67ee2a38b8f6e).
+The public page's initial metadata passed the same checks as the local build.
+The image returned HTTP 200 and `image/png`, with the exact expected SHA-256
+`cb3027b8b46063277f17da512c78b1fbf2f30618c79514e93affeaa266425c58`.
+The full response checks are in [`verification-live.json`](verification-live.json).
+GitHub resolved the author and committer to `DhanushKrishna4`; the contributors
+API listed only that account. No co-author trailer was added.
 
 Website metadata does **not** set GitHub's separate repository social-preview
 image. That setting was not changed by this work; the finished PNG is suitable
